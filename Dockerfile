@@ -2,10 +2,10 @@
 FROM python:3.10
 
 # กำหนด path ที่จะใช้ใน container
-WORKDIR /tests
+WORKDIR /project
 
 # คัดลอกทุกอย่างจากเครื่องคุณเข้า container
-COPY . /tests
+COPY . /project
 
 # ติดตั้ง Playwright และ dependencies
 RUN pip install --upgrade pip && \
